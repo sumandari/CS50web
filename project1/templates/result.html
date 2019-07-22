@@ -1,0 +1,30 @@
+{% extends "layout.html"%}
+
+{% block title %}Result{% endblock %}
+
+{% block main %}
+{% if search|length > 0 %}
+<table class="table table-bordered">
+    <tr>
+        <td scope="col">ISBN</td>
+        <td scope="col">Author</td>
+        <td scope="col">Title</td>
+        <td scope="col">Year</td>
+    </tr>
+    
+    
+    {% for data in search %}
+    <tr>
+        <td><a href="/book/{{data['id']}}">{{data['isbn']}}</a></td>
+        <td><a href="/book/{{data['id']}}">{{data['title']}}</a></td>
+        <td><a href="/book/{{data['id']}}">{{data['author']}}</a></td>
+        <td><a href="/book/{{data['id']}}">{{data['year']}}</a></td>
+    </tr>
+    {% endfor %}
+ </table>
+    {% else %}
+    
+<p>no match found, sorry</p>
+    {% endif %}
+
+{% endblock %}

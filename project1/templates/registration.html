@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}Registration{% endblock %}
+
+{% block main %}
+<form id="registration" method="post"> 
+    <div class="lebar-auto">
+        <h4>Registration</h4>
+            <div class="form-group">
+                <input type="text" class="form-control" autocomplete="off" autofocus name="username" id="username" aria-describedby="usernameHelp" placeholder="Enter username" required>
+                <small class="form-text text-muted">Username should be alphabetic, numeric or _ (underscore character)</small>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" name="confirmation" id="confirmation" placeholder="Retype Password" required>
+                <small id="helpConfirmation" class="form-text text-danger"></small>
+            </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </div>
+</form>
+{% endblock %}

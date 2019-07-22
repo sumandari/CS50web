@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block main %}
+<form id="login" method="post"> 
+    <div class="tengah">
+        <div class="form-group">
+            <input type="text" class="form-control" autocomplete="off" autofocus name="username" id="userlogin" aria-describedby="usernameHelp" placeholder="username" required>
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </div>
+</form>
+{% endblock %}

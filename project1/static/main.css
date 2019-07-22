@@ -1,0 +1,31 @@
+main{
+    /* scroll horizontally as needed */
+    overflow-x: auto;
+}
+
+main .lebar-auto .form-control {
+    width: auto
+}
+
+main .tengah {
+    text-align: center;
+}
+
+main .tengah .form-control{
+    
+    display: inline-block;
+}
+
+
+form#login  {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 25%;
+}
+
+form#index {
+    padding: 20px;
+    margin: 0 15%;
+}
+

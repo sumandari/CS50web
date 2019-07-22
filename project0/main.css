@@ -1,0 +1,7 @@
+a.index {
+    width: 11em;
+}
+
+a#home :hover {
+    background-color: deeppink;
+}
